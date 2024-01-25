@@ -1,8 +1,11 @@
+@import "../styles/vars.css";
+
 body {
-  background: #000;
-  font-family: "DM Sans", sans-serif; 
+  background: var(--background-body);
+  font-family: var(--font-family);
 }
 
+/* Logo */
 .logo {
   background: #121212;
   display: flex;
@@ -14,6 +17,9 @@ body {
   width: 5rem;
 }
 
+/* Fim da logo */
+
+/* Sidebar */
 .sidebar {
   position: fixed;
   top: 0;
@@ -39,11 +45,15 @@ body {
 }
 
 .sidebar nav ul li a {
-  color: #b3b3b3;
+  color: var(--color-primary);
   font-weight: 600;
   font-size: 0.875rem;
   text-decoration: none;
 }
+
+/* Fim da Sidebar */
+
+/* Library */
 
 .library {
   background-color: #121212;
@@ -52,7 +62,7 @@ body {
   justify-content: space-between;
   flex-direction: column;
   padding: 0.25rem 0.5rem;
-  color: #b3b3b3;
+  color: var(--color-primary);
   font-weight: 600;
   font-size: 0.875rem;
   margin-top: 0.625rem;
@@ -65,7 +75,7 @@ body {
 
 .library__button {
   margin-right: 0.625rem;
-  color: #b3b3b3;
+  color: var(--color-primary);
   background-color: transparent;
   border: 0;
   font-size: 1rem;
@@ -86,6 +96,8 @@ body {
   margin: 1.5rem 0.625rem;
 }
 
+/* Section Playlist */
+
 .section-playlist {
   margin: 1.5rem 0.625rem;
   align-items: flex-start;
@@ -93,7 +105,7 @@ body {
   display: flex;
   justify-content: space-between;
   gap: 1.25rem;
-  color: #b3b3b3;
+  color: var(--color-primary);
   font-weight: 600;
   font-size: 0.875rem;
   margin: 0.5rem 0;
@@ -101,66 +113,126 @@ body {
   border-radius: 1.25rem;
 }
 
-.section-playlist__content{
+.section-playlist__content {
   display: flex;
   flex-direction: column;
 }
 
-.text{
-  padding-bottom: .875rem;
+.text {
+  padding-bottom: 0.875rem;
   color: #fff;
 }
 
-.subtitle{
+.subtitle {
   font-weight: 500;
-  font-size: .75rem;
+  font-size: 0.75rem;
 }
 
-.title{
+.title {
   font-weight: 700;
-
 }
 
-.section-playlist__button{
+.section-playlist__button {
   background-color: #fff;
   color: #000;
   border-radius: 1.25rem;
-  font-size: .75rem;
+  font-size: 0.75rem;
   display: flex;
   justify-content: center;
   font-weight: 700;
   text-decoration: none;
   text-transform: none;
-  padding: .625rem;
+  padding: 0.625rem;
   border: 0;
   width: 7.0625rem;
-  margin-top: .75rem;
+  margin-top: 0.75rem;
 }
 
-.cookies{
+/* Fim da Section Playlist */
+
+/* Cookies */
+
+.cookies {
   margin: 1.5625rem 1.25rem;
 }
 
-.cookies a{
-  color: #b3b3b3;
+.cookies a {
+  color: var(--color-primary);
   font-weight: 500;
   text-decoration: none;
-  font-size: .625rem;
+  font-size: 0.625rem;
 }
 
-.cookies a:hover{
+.cookies a:hover {
   text-decoration: underline;
 }
 
-.languages__button{
+/* Fim Cookies */
+
+/* Languages */
+
+.languages__button {
   background-color: transparent;
-  border: .0625rem solid #878787;
+  border: 0.0625rem solid #878787;
   color: #fff;
   cursor: pointer;
   align-items: center;
   font-weight: 700;
   width: 10.625rem;
-  margin: .5rem;
-  padding: .5rem;
-  border-radius: 1.25rem ;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 1.25rem;
 }
+
+/* Fim da Linguages */
+
+/* Fim da Library*/
+
+/* Disclaimer Premium */
+
+.disclaimer-premium {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to right, #ae2896, #509bf5);
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.disclaimer-premium .text {
+  flex-shrink: 0;
+}
+
+.disclaimer-premium__title {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.disclaimer-premium .disclaimer-premium__subtitle {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.disclaimer-premium button {
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 14px 30px;
+  border: 0px;
+  border-radius: 40px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.disclaimer-premium butoon:hover{
+  
+}
+
+/* Fim da Disclaimer Premium */
