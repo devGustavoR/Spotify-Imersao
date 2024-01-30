@@ -1,4 +1,5 @@
-/* Header */
+
+@import "../styles/vars.css";
 
 .main-container{
   max-width: 80vw;
@@ -20,8 +21,8 @@
 
 .navigation {
   display: flex;
-  align-items: center;
   justify-content: space-around;
+  align-items: center;
 }
 
 .arrow-left{
@@ -89,3 +90,5 @@
   font-weight: 700;
   border-radius: 2.5rem;
 }
+
+.
