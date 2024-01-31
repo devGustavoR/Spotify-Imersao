@@ -91,4 +91,26 @@
   border-radius: 2.5rem;
 }
 
-.
+.playlist-container{
+  height: 68vh;
+  padding-top: 1rem;
+  margin: .625rem;
+  border-radius: 10px;
+  background-color: #121212;
+}
+
+.text__days, .text__navigation{
+  color: #fff;
+}
+
+.text__days{
+  padding: 1rem;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.text__navigation{
+  padding: .0625rem .5625rem .5625rem .875rem;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
